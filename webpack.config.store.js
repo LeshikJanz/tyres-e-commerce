@@ -63,7 +63,7 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin("assets/css/bundle-[contenthash].css"),
+    new ExtractTextPlugin("assets/css/bundle-[md5:contenthash:hex:20].css"),
     new HtmlWebpackPlugin({
       template: 'theme/index.html',
       inject: 'body',

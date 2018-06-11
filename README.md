@@ -1,6 +1,6 @@
 ## Development
 
-// Adding default data to db 
+Adding default data to db: 
 ```
 mongo shop
 db.pages.insertMany([
@@ -16,11 +16,11 @@ db.pages.insertMany([
 db.save;
 ```
 
-// Running
+Running:
 ```
 npm i
 npm run build
 npm start
 ```
 
-// Tested with node@10.3.0
+Tested with node@10.3.0

@@ -1,6 +1,7 @@
 ## Development
-```
+
 // Adding default data to db 
+```
 mongo shop
 db.pages.insertMany([
   {slug: '', meta_title: 'Home', enabled: true, is_system: true},
@@ -13,10 +14,13 @@ db.pages.insertMany([
   {slug: 'account', meta_title: 'Account', enabled: true, is_system: true}
 ]);
 db.save;
+```
 
-// Tested with node@10.3.0
+// Running
+```
 npm i
-npm run theme:build
 npm run build
 npm start
 ```
+
+// Tested with node@10.3.0

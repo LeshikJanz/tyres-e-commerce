@@ -69,17 +69,8 @@
   "home_slider": [
     {
       "path": "/page-1",
-      "image": "slide8.jpg",
-      "description": "COMFORT. SPORT. STYLE.",
-      "title": "THE FRESH FOAM CRUZ"
-    },
-    {
-      "path": "/page-2",
-      "image": "slide9.jpg"
-    },
-    {
-      "image": "slide7.jpg",
-      "path": "/page-3"
+      "image": "tire-background.png",
+      "title": "Quality Tyres. Great Prices."
     }
   ],
   "home_slider_color": "#ffffff",

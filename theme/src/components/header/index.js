@@ -12,6 +12,7 @@ const Fragment = React.Fragment;
 const Logo = ({ src, onClick, alt }) => (
   <NavLink className="logo-image" to="/" onClick={onClick}>
     <img src={src} alt={alt}/>
+    <span>TyreShop</span>
   </NavLink>
 )
 

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3e9ecd0-a27f-430e-9580-d139e0238566" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.store.js" afterPath="$PROJECT_DIR$/webpack.config.store.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.admin.js" afterPath="$PROJECT_DIR$/webpack.config.admin.js" />
     </list>
     <ignored path="cezerin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,11 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.config.store.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webpack.config.store.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack.config.store.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
               <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.admin.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpack.config.admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -91,6 +101,7 @@
         <option value="$PROJECT_DIR$/theme/src/components/productList/itemImage.js" />
         <option value="$PROJECT_DIR$/src/api/server/services/settings/settings.js" />
         <option value="$PROJECT_DIR$/webpack.config.store.js" />
+        <option value="$PROJECT_DIR$/webpack.config.admin.js" />
       </list>
     </option>
   </component>
@@ -311,12 +322,12 @@
       <workItem from="1528707863005" duration="4497000" />
       <workItem from="1528715045601" duration="7081000" />
       <workItem from="1528737468716" duration="41000" />
-      <workItem from="1528737672236" duration="415000" />
+      <workItem from="1528737672236" duration="470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18466000" />
+    <option name="totallyTimeSpent" value="18521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -357,13 +368,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/store/client/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -704,6 +708,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
           <folding />
         </state>
       </provider>

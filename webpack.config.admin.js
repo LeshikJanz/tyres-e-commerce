@@ -93,7 +93,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({ APPLICATION_CONFIG: JSON.stringify(applicationConfig) }),
     new webpack.DefinePlugin({ APPLICATION_TEXT: JSON.stringify(applicationText) }),
-    new ExtractTextPlugin("admin-assets/css/bundle-[contenthash].css"),
+    new ExtractTextPlugin("admin-assets/css/bundle-[md5:contenthash:hex:20].css"),
     new HtmlWebpackPlugin({
       template: 'src/admin/client/index.html',
       language: applicationConfig.language,

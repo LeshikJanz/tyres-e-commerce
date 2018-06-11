@@ -13,7 +13,7 @@ const parse = require('../../lib/parse');
 class SettingsService {
   constructor() {
     this.defaultSettings = {
-      'domain': 'http://localhost',
+      'domain': 'http://localhost:3000',
       'logo_file': null,
       'logo': '/assets/images/logo.png',
       'language': 'en',

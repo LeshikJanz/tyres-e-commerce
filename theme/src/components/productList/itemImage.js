@@ -6,6 +6,8 @@ import LazyLoad from 'react-lazyload'
 const ItemImage = ({ images, productName, height }) => {
   if(images && images.length > 0) {
     const image = images[0];
+    console.log("image.url")
+    console.log(image.url)
     const imageUrl = helper.getThumbnailUrl(image.url, themeSettings.listThumbnailWidth);
     const alt = image.alt && image.alt.length > 0 ? image.alt : productName;
 

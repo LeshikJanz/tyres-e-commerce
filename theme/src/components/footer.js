@@ -18,7 +18,7 @@ class FooterMenu extends React.Component {
     const { title, items } = this.props;
     let ulItems = null;
 
-    if(items && items.length > 0){
+    if (items && items.length > 0) {
       ulItems = items.map((item, index) => (
         <li key={index}>
           <NavLink to={item.url || ''}>{item.text}</NavLink>
@@ -28,7 +28,8 @@ class FooterMenu extends React.Component {
 
     return (
       <div className="column is-3">
-        <div className={'footer-title mobile-padding' + (this.state.isActive ? ' footer-menu-open' : '')} onClick={this.isActiveToggle}>{title}<span></span></div>
+        <div className={'footer-title mobile-padding' + (this.state.isActive ? ' footer-menu-open' : '')}
+             onClick={this.isActiveToggle}>{title}<span></span></div>
         <ul className="footer-menu">
           {ulItems}
         </ul>
@@ -38,7 +39,7 @@ class FooterMenu extends React.Component {
 }
 
 const SocialIcons = ({ icons }) => {
-  if(icons && icons.length > 0){
+  if (icons && icons.length > 0) {
     const items = icons.map((icon, index) => (
       <a key={index} href={icon.url || ''} target="_blank" rel="noopener" title={icon.type} className={icon.type}></a>
     ));
@@ -53,12 +54,12 @@ const SocialIcons = ({ icons }) => {
 }
 
 const Contacts = ({ contacts }) => {
-  if(contacts && contacts.length > 0){
+  if (contacts && contacts.length > 0) {
     const items = contacts.map((item, index) => {
       const contact = item ? item.text : null;
-      if(contact && contact.indexOf('@') > 0){
+      if (contact && contact.indexOf('@') > 0) {
         return (
-            <li key={index}><a href={'mailto:' + contact}>{contact}</a></li>
+          <li key={index}><a href={'mailto:' + contact}>{contact}</a></li>
         )
       } else {
         return (
@@ -92,19 +93,24 @@ export default class Footer extends React.PureComponent {
                   <div className="mobile-padding">
                     <div className="footer-logo">
                       <img src={footerLogoUrl} alt="logo"/>
+                      <div className="footer-address">
+                        <span>tyreshop.com</span><br/>
+                        <span>Wangara WA</span><br/>
+                        <span>9226 6554</span>
+                      </div>
                     </div>
                     <p>
                       <small>
                         {themeSettings.footer_about}
                       </small>
                     </p>
-                    <Contacts contacts={themeSettings.footer_contacts} />
-                    <SocialIcons icons={themeSettings.footer_social} />
+                    <Contacts contacts={themeSettings.footer_contacts}/>
+                    <SocialIcons icons={themeSettings.footer_social}/>
                   </div>
                 </div>
                 <div className="column is-1 is-hidden-mobile"></div>
-                <FooterMenu title={themeSettings.footer_menu_1_title} items={themeSettings.footer_menu_1_items} />
-                <FooterMenu title={themeSettings.footer_menu_2_title} items={themeSettings.footer_menu_2_items} />
+                <FooterMenu title={themeSettings.footer_menu_1_title} items={themeSettings.footer_menu_1_items}/>
+                <FooterMenu title={themeSettings.footer_menu_2_title} items={themeSettings.footer_menu_2_items}/>
               </div>
             </div>
           </div>

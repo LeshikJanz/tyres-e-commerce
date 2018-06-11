@@ -3,65 +3,6 @@
   "checkoutButtonClass": "checkout-button button is-primary",
   "checkoutEditButtonClass": "checkout-button button",
   "cartThumbnailWidth": 100,
-  "footer_contacts": [
-    {
-      "text": "104 N Stagecoach Rd"
-    },
-    {
-      "text": "Dover Foxcroft, ME, 04426"
-    },
-    {
-      "text": "(207) 564-8482"
-    },
-    {
-      "text": "sales@shop.com"
-    }
-  ],
-  "footer_about": "Store - just to show you what it can. Some text go here. Some text go here. Some text go here. Some text go here. Some text go here. Some text go here. Some text go here.",
-  "footer_menu_2_title": "Customer service",
-  "footer_menu_1_title": "Company",
-  "footer_social": [
-    {
-      "type": "facebook",
-      "url": "https://www.facebook.com/"
-    },
-    {
-      "type": "twitter",
-      "url": "https://twitter.com/"
-    }
-  ],
-  "footer_menu_1_items": [
-    {
-      "text": "About",
-      "url": "/about"
-    },
-    {
-      "text": "Blog",
-      "url": "/blog"
-    },
-    {
-      "text": "Terms of Service",
-      "url": "/tos"
-    },
-    {
-      "text": "Privacy Policy",
-      "url": "/privacy-policy"
-    }
-  ],
-  "footer_menu_2_items": [
-    {
-      "text": "Shipping & returns",
-      "url": "/"
-    },
-    {
-      "text": "Conditions of Use",
-      "url": "/"
-    },
-    {
-      "text": "Sitemap",
-      "url": "/"
-    }
-  ],
   "search_placeholder": "",
   "home_products_limit": 8,
   "home_products_title": "BEST SELLERS",

@@ -15,6 +15,7 @@ class SettingsService {
     this.defaultSettings = {
       'domain': 'http://localhost',
       'logo_file': null,
+      'logo': '/assets/images/logo.png',
       'language': 'en',
       'currency_code': 'USD',
       'currency_symbol': '$',

@@ -5,6 +5,7 @@ const initialState = {
   installInProcess: false,
   settings: {
       language: 'en',
+      logo: '/assets/images/logo.png',
       currency_code: 'USD',
       currency_symbol: '$',
       currency_format: '${amount}',

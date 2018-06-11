@@ -11,7 +11,7 @@ const Fragment = React.Fragment;
 
 const Logo = ({ src, onClick, alt }) => (
   <NavLink className="logo-image" to="/" onClick={onClick}>
-    <img src={src} alt={alt} />
+    <img src={src} alt={alt}/>
   </NavLink>
 )
 
@@ -25,7 +25,7 @@ const BurgerButton = ({ onClick, className }) => (
 
 const BackButton = ({ onClick }) => (
   <span className="navbar-item is-hidden-tablet is-flex-mobile" onClick={onClick}>
-    <img className="icon" src="/assets/images/arrow_back.svg" style={{ width: 18 }} />
+    <img className="icon" src="/assets/images/arrow_back.svg" style={{ width: 18 }}/>
   </span>
 )
 
@@ -40,7 +40,7 @@ export default class Header extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if(this.props.state.cart !== nextProps.state.cart && this.props.state.currentPage.path !== '/checkout'){
+    if (this.props.state.cart !== nextProps.state.cart && this.props.state.currentPage.path !== '/checkout') {
       this.showCart();
     }
   }
@@ -61,7 +61,7 @@ export default class Header extends React.Component {
   }
 
   menuClose = () => {
-    this.setState({mobileMenuIsActive: false});
+    this.setState({ mobileMenuIsActive: false });
     document.body.classList.remove('noscroll');
   }
 
@@ -90,10 +90,10 @@ export default class Header extends React.Component {
   }
 
   handleSearch = search => {
-    if(this.props.state.currentPage.path === '/search'){
+    if (this.props.state.currentPage.path === '/search') {
       this.props.setSearch(search);
     } else {
-      if(search && search !== ''){
+      if (search && search !== '') {
         this.props.setLocation('/search?search=' + search);
       }
     }
@@ -105,7 +105,7 @@ export default class Header extends React.Component {
   }
 
   render() {
-    const {categories, cart, settings, currentPage, location, productFilter} = this.props.state;
+    const { categories, cart, settings, currentPage, location, productFilter } = this.props.state;
     const classToggle = this.state.mobileMenuIsActive ? 'navbar-burger is-hidden-tablet is-active' : 'navbar-burger is-hidden-tablet';
     const showBackButton = currentPage.type === 'product' && location.hasHistory;
 
@@ -118,26 +118,28 @@ export default class Header extends React.Component {
 
               <div className="column is-4">
                 {!showBackButton &&
-                  <BurgerButton onClick={this.menuToggle} className={classToggle} />
+                <BurgerButton onClick={this.menuToggle} className={classToggle}/>
                 }
                 {showBackButton &&
-                  <BackButton onClick={this.handleGoBack} />
+                <BackButton onClick={this.handleGoBack}/>
                 }
               </div>
 
               <div className="column is-4 has-text-centered">
-                <Logo src={settings.logo} onClick={this.closeAll} alt="logo" />
+                <Logo src={settings.logo} onClick={this.closeAll} alt="logo"/>
               </div>
               <div className="column is-4 has-text-right header-block-right">
 
                 <span className="icon icon-search is-hidden-tablet" onClick={this.searchToggle}>
                   <img src="/assets/images/search.svg" alt={text.search} title={text.search} style={{ minWidth: 24 }}/>
                 </span>
-                <SearchBox value={productFilter.search} onSearch={this.handleSearch} className={this.state.mobileSearchIsActive ? 'search-active' : ''} />
+                <SearchBox value={productFilter.search} onSearch={this.handleSearch}
+                           className={this.state.mobileSearchIsActive ? 'search-active' : ''}/>
 
-                <CartIndicator cart={cart} onClick={this.cartToggle} cartIsActive={this.state.cartIsActive} />
+                <CartIndicator cart={cart} onClick={this.cartToggle} cartIsActive={this.state.cartIsActive}/>
                 <div className={this.state.cartIsActive ? 'mini-cart-open' : ''}>
-                  <Cart cart={cart} deleteCartItem={this.props.deleteCartItem} settings={settings} cartToggle={this.cartToggle} />
+                  <Cart cart={cart} deleteCartItem={this.props.deleteCartItem} settings={settings}
+                        cartToggle={this.cartToggle}/>
                 </div>
 
               </div>
@@ -154,7 +156,8 @@ export default class Header extends React.Component {
           </div>
         </header>
 
-        <div className={(this.state.mobileMenuIsActive || this.state.cartIsActive ? 'dark-overflow' : '')} onClick={this.closeAll}></div>
+        <div className={(this.state.mobileMenuIsActive || this.state.cartIsActive ? 'dark-overflow' : '')}
+             onClick={this.closeAll}></div>
         <div className={'mobile-nav is-hidden-tablet' + (this.state.mobileMenuIsActive ? ' mobile-nav-open' : '')}>
           <HeadMenu
             isMobile={true}
@@ -163,7 +166,7 @@ export default class Header extends React.Component {
             onClick={this.menuClose}
           />
         </div>
-    </Fragment>
+      </Fragment>
     )
   }
 }

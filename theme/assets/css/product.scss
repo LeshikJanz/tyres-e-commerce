@@ -149,3 +149,10 @@ Mobile
     background-color: rgba(0,0,0,0.05);
   }
 }
+
+.image-gallery-image img {
+  cursor: zoom-in;
+  height: 100%;
+  max-height: 500px;
+  width: inherit;
+}

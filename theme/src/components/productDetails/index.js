@@ -103,6 +103,9 @@ export default class ProductDetails extends React.Component {
         themeSettings.maxCartItemQty :
         (selectedVariant ? selectedVariant.stock_quantity : product.stock_quantity);
 
+    console.log("product")
+    console.log(product)
+
     if(product){
       return (
         <Fragment>
@@ -120,6 +123,7 @@ export default class ProductDetails extends React.Component {
                     <Tags tags={product.tags} />
                     <h1 className="title is-4 product-name">{product.name}</h1>
                     <Price product={product} variant={selectedVariant} isAllOptionsSelected={isAllOptionsSelected} settings={settings} />
+                    <div className="product-content" dangerouslySetInnerHTML={{ __html: product.description }}/>
 
                     {themeSettings.show_discount_countdown && product.on_sale === true &&
                       <DiscountCountdown product={product} />
@@ -142,9 +146,6 @@ export default class ProductDetails extends React.Component {
             <div className="container">
               <div className="content">
                 <div className="columns">
-                  <div className="column is-7">
-                    <Description description={product.description} />
-                  </div>
                   <div className="column is-5">
                     <Attributes attributes={product.attributes} />
                   </div>

@@ -134,8 +134,6 @@ export default class Header extends React.Component {
                 <span className="icon icon-search is-hidden-tablet" onClick={this.searchToggle}>
                   <img src="/assets/images/search.svg" alt={text.search} title={text.search} style={{ minWidth: 24 }}/>
                 </span>
-                <SearchBox value={productFilter.search} onSearch={this.handleSearch}
-                           className={this.state.mobileSearchIsActive ? 'search-active' : ''}/>
 
                 <CartIndicator cart={cart} onClick={this.cartToggle} cartIsActive={this.state.cartIsActive}/>
                 <div className={this.state.cartIsActive ? 'mini-cart-open' : ''}>
@@ -145,15 +143,6 @@ export default class Header extends React.Component {
 
               </div>
             </div>
-
-            <div className="primary-nav is-hidden-mobile">
-              <HeadMenu
-                categories={categories}
-                location={location}
-                isMobile={false}
-              />
-            </div>
-
           </div>
         </header>
 

@@ -169,18 +169,18 @@ export default class ProductDetails extends React.Component {
             />
           }
 
-          {themeSettings.disqus_shortname && themeSettings.disqus_shortname !== '' &&
-            <section className="section">
-              <div className="container">
-                <Disqus
-                  shortname={themeSettings.disqus_shortname}
-                  identifier={product.id}
-                  title={product.name}
-                  url={product.url}
-                />
-              </div>
-            </section>
-          }
+          {/*{themeSettings.disqus_shortname && themeSettings.disqus_shortname !== '' &&*/}
+            {/*<section className="section">*/}
+              {/*<div className="container">*/}
+                {/*<Disqus*/}
+                  {/*shortname={themeSettings.disqus_shortname}*/}
+                  {/*identifier={product.id}*/}
+                  {/*title={product.name}*/}
+                  {/*url={product.url}*/}
+                {/*/>*/}
+              {/*</div>*/}
+            {/*</section>*/}
+          {/*}*/}
         </Fragment>
       )
     } else {
